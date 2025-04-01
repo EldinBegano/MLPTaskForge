@@ -133,3 +133,16 @@ body {
     border-radius: 4px;
     height: 10px;
   }
+  #addTaskButton{
+      cursor: pointer;
+      margin-left: 3vw;
+      font-size: 24px;
+      margin-top: 0;
+      margin-bottom: 0;
+  }
+#addTaskUI{
+    position: absolute;
+    z-index: 1;
+    left: 10vw;
+    top: 10vw;
+}
