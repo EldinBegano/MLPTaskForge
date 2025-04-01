@@ -10,10 +10,10 @@ toggleBtn.addEventListener('click', function () {
     icon.classList.replace('fa-sun-o', 'fa-moon-o');
   }
 });
+/*
 function addTab() {
 
-  document.querySelector("#topHeader").innerHTML = `
-      <button id="toggleModeBtn"><i class="fa fa-moon-o"></i></button>
+  document.querySelector("#addTaskWrapper").innerHTML = `
       <p id="addTaskButton" onclick="removeTabEntry()">-</p>
   `
   document.querySelector("#addTaskButton").innerHTML = "-";
@@ -43,9 +43,9 @@ function addTab() {
 
 }
 function removeTabEntry(){
-  document.querySelector("#topHeader").innerHTML = `
-      <button id="toggleModeBtn"><i class="fa fa-moon-o"></i></button>
+  document.querySelector("#addTaskWrapper").innerHTML = `
       <p id="addTaskButton" onclick="addTab()">+</p>
   `
   document.querySelector('#addTaskUI').innerHTML = "";
 }
+*/
