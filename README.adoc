@@ -1,11 +1,38 @@
-# MLPTaskForge
+= MLPTaskForge
+MLP, JHF
+:toc:
 
-MLPTaskForge is a simple ToDo App. It should help you keep organized without having to store your data online or at any company.
+MLPTaskForge is a "simple" ToDo App. It should help you keep organized without having to store your data online or at any company.
 
-## Features
+== Features
 
 * Task Creation and Management: create tasks with a title, description, priority.
 * Due Dates: it will remind you to do your tasks.
 * Offline Support: work on your todo list without internet
 * Dark & Light Mode: themes
 * Themes: Change the look of your UI
+
+
+== Building
+
+=== Prerequisites
+
+https://tauri.app/start/prerequisites/[Tauri Dependencies]
+
+
+=== Running
+
+[source,shell]
+----
+bun run tauri dev
+----
+
+
+=== Building from Source
+
+[source,shell]
+----
+bun run tauri build
+----
+
+
