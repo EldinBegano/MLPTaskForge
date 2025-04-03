@@ -1,55 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Tauri + Vue + Typescript App</title>
-    <link rel="stylesheet" href="./index.css" />
-  </head>
+    <link rel="stylesheet" href="./index.css"/>
+</head>
 
-  <body>
-    <div id="topHeader" class="header">
-      <button id="toggleModeBtn"><i class="fa fa-moon-o"></i></button>
-
-      <div id="addTaskWrapper">
-        <p id="addTaskButton" onclick="addTab()">+</p>
-      </div>
-    </div>
-
-    <div class="todo-container">
-      <div class="board-header">
-        <div style="width: 4.87%; border-right: 1px solid #000"></div>
-
-        <div class="column-title">To Do</div>
-
-        <div class="column-title">In Progress</div>
-
-        <div class="column-title">Done</div>
-      </div>
-
-      <div class="content-wrapper">
-        <div class="side-labels">
-          <div class="board-label">Board 1</div>
-        </div>
-
-        <div class="board-content">
-          <div class="board-column">
-            <div class="card">
-              <div class="card-title">Projekt machen</div>
-
-              <div class="card-details">Style testen</div>
-            </div>
-
-            <div class="empty-card"></div>
-          </div>
-
-          <div class="board-column"></div>
-
-          <div class="board-column"></div>
-        </div>
-      </div>
-    </div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+<body>
+<div id="app"></div>
+<script type="module" src="/src/main.ts"></script>
+</body>
 </html>
