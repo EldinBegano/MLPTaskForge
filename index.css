@@ -1,0 +1,152 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  background-color: #222;
+  color: #f5f5f5;
+}
+
+.dark-mode .card,
+.dark-mode .empty-card {
+  background-color: #444;
+  color: #f5f5f5;
+}
+
+.dark-mode .board-header,
+.dark-mode .side-labels,
+.dark-mode .board-column {
+  border-color: #555;
+}
+
+.header {
+  background-color: white;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.dark-mode .header {
+  background-color: #333;
+  border-bottom: 1px solid #555;
+}
+
+#toggleModeBtn {
+  width: 36px;
+  height: 36px;
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dark-mode #toggleModeBtn {
+  color: #f5f5f5;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.board-header {
+  display: flex;
+  font-weight: bold;
+  border-bottom: 1px solid #000;
+}
+
+.column-title {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.board-content {
+  display: flex;
+  flex: 1;
+}
+
+.board-column {
+  flex: 1;
+  border-right: 1px solid #000;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.board-column:last-child {
+  border-right: none;
+}
+
+.board-label {
+  padding: 10px;
+  font-size: 14px;
+  width: 60px;
+}
+
+.content-wrapper {
+  display: flex;
+  flex: 1;
+}
+
+.side-labels {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #000;
+}
+
+.card {
+  background-color: #e0e0e0;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.card-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.card-details {
+  font-size: 12px;
+  color: #555;
+}
+
+.dark-mode .card-details {
+  color: #bbb;
+}
+
+.empty-card {
+  background-color: #e0e0e0;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 4px;
+  height: 10px;
+}
+
+#addTaskButton {
+  cursor: pointer;
+  margin-left: 3vw;
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#addTaskUI {
+  position: absolute;
+  z-index: 1;
+  left: 10vw;
+  top: 10vw;
+}
